@@ -1,0 +1,5 @@
+#!/bin/sh
+
+total_mem=$(/usr/bin/free -m | /usr/bin/awk '$1 == "Mem:" { print $2 }')
+current_mem=$(/usr/bin/free -m | /usr/bin/awk '$1 == "-/+" { print $3 }')
+echo "scale=1;${current_mem} * 100.0 / ${total_mem}" | bc -l 

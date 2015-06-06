@@ -1,0 +1,6 @@
+alias vim='/usr/bin/vim'
+alias ll='ls -lah --color'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias screen='screen -T xterm'
