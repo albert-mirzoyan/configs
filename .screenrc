@@ -11,9 +11,9 @@ caption string "%{wk}%n %t"
 
 #hardstatus alwayslastline '%{= G}[ %{G}%H %{g}][%= %{= w}%?%-Lw%?%{= R}%n*%f %t%?%{= R}(%u)%?%{= w}%+Lw%?%= %{= g}][ %{y}Load: %l %{g}][%{B}%Y-%m-%d %{W}%c:%s %{g}]'
 
-hardstatus alwayslastline '%{.wk}%-w%{.kW}%n %t%{-}%+w %=%{..k} [LA: %l][M: %2`%%]'
+hardstatus alwayslastline '%{.wk}%-w%{.kW}%n %t%{-}%+w %=%{..k} [%l][%2`%%]'
 
-backtick 2 1 1 /home/amirzoyan/bin/screen/mem-usage
+backtick 2 1 1 $HOME/bin/sc/mem-usage
 
 bind + resize +3
 bind - resize -1
