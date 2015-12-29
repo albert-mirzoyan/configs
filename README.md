@@ -12,6 +12,6 @@ git config core.worktree "../../"
 # checkout files
 git reset --hard origin/master
 
-# append custom rc congif to .bashrc
+# append custom rc config to .bashrc
 echo -e "\nif [ -f ~/.bash/rc ]; then\n    . ~/.bash/rc\nfi" >> ~/.bashrc
 ```
