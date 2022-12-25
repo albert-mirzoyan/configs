@@ -1,12 +1,10 @@
 # ~/.bashrc
+dirpath=$(dirname ${BASH_SOURCE[0]})
 
-if [ -f ~/.bash/aliases ]; then
-    . ~/.bash/aliases
-fi
-
-if [ -f ~/.bash/acd ]; then
-    . ~/.bash/acd
-fi
+for file in $dirpath/.bash/*.bashrc;
+do
+source "$file"
+done
 
 export GREP_OPTIONS='--color=auto'
 
